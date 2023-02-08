@@ -1,43 +1,46 @@
-/* SASS/SCSS */
+/* Default */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #3498db;
-}
-
-header {
-  background-color: #2ecc71;
-  padding: 20px;
-  text-align: center;
-}
-
-header h1 {
-  color: white;
   margin: 0;
+  overflow-x: hidden;
 }
 
-.navbar {
-  background-color: #333333;
-}
-.navbar a {
-  color: white;
-}
-.navbar .navbar-nav li a:hover {
-  background-color: #4d4d4d;
-}
-.navbar .navbar-toggler span {
-  background-color: white;
-}
-
-section {
-  padding: 20px;
+/* Navbar */
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: lightgray;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 }
 
-section#about-me {
-  background-color: white;
+
+/* Headlines */
+#title-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+  background-color: red;
+  font-size: 300%;
 }
 
-section#projects li {
-  list-style-type: none;
+#title {}
+
+/* Images */
+
+#profile-pic-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: green;
 }
 
-/*# sourceMappingURL=style.css.map */
+#profile-pic {
+  border-radius: 50%;
+}
