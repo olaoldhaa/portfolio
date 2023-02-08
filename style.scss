@@ -1,0 +1,56 @@
+/* SASS/SCSS */
+
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: $primary-color;
+}
+
+header {
+  background-color: $secondary-color;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  margin: 0;
+}
+
+$dark-color: #333333;
+
+.navbar {
+  background-color: $dark-color;
+  a {
+    color: white;
+  }
+  .navbar-nav {
+    li {
+      a {
+        &:hover {
+          background-color: lighten($dark-color, 10%);
+        }
+      }
+    }
+  }
+  .navbar-toggler {
+    span {
+      background-color: white;
+    }
+  }
+}
+
+
+section {
+  padding: 20px;
+}
+
+section#about-me {
+  background-color: white;
+}
+
+section#projects li {
+  list-style-type: none;
+}
